@@ -68,3 +68,71 @@ public class Test {
         System.out.println(); // 그냥 빈 줄 출력
     }
 }
+
+
+
+======================================= Been
+
+    package list2.been;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//리스트 안에 좋아하는 송리스트
+public class MusicPlayer {
+	private List<Music> musicList;
+	public MusicPlayer () {
+		musicList = new ArrayList<Music>();
+	}
+	public void addMusic(String singer,String title,
+			String release) {
+		Music music =new Music();
+		music.setSinger(singer);
+		music.setTitle(title);
+		music.setRelease(release);
+		musicList.add(music);
+		
+	}
+}
+==================================================
+package list2.been;
+
+public class Test {
+	public static void main(String[] args) {
+		MusicPlayer mp = new MusicPlayer();
+		mp.addMusic("AUDREY NUNA", "Golden","2025.06.20");
+		mp.addMusic("Black Pink", "JUMP","2025.07.10");
+		mp.addMusic("사카낙션", "新宝島","2000.07.10");
+		mp.addMusic("Green day", "She","1994.02.10");
+		mp.addMusic("Nirvana", "Breed","1999.01.10");
+		mp.addMusic("Ami", "Gost","2025.04.10");
+		System.out.println();	
+	}
+}
+-=============================
+
+    package list2.been;
+
+public class Music {
+ private String singer;
+ private String title;
+ private String release;
+ public String getSinger() {
+	return singer;
+ }
+ public String getTitle() {
+	return title;
+ }
+ public String getRelease() {
+	return release;
+ }
+ public void setSinger(String singer) {
+	this.singer = singer;
+ }
+ public void setTitle(String title) {
+	this.title = title;
+ }
+ public void setRelease(String release) {
+	this.release = release;
+ }
+}
