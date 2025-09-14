@@ -116,3 +116,17 @@ public static void main(String[] args) {
 System.out.println(isSame);
 }
 }
+
+
+
+
+
+
+ArithmeticException	0으로 나누기 등 수학 오류
+ArrayIndexOutOfBoundsException	배열 인덱스 범위 초과
+NullPointerException	null 객체를 접근할 때
+NumberFormatException	숫자로 변환할 수 없는 문자열
+IllegalArgumentException	잘못된 인자(값)를 메서드에 전달할 때
+FileNotFoundException	파일이 존재하지 않을 때
+IOException	입출력 중 일반적인 오류
+ClassCastException	잘못된 형 변환
